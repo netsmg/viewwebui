@@ -1,2 +1,0 @@
-# SvelteFire Docs Site
-
