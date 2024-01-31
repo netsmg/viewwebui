@@ -25,7 +25,7 @@
                     </div>
 
                     <ul class="list list--mb">
-                        {@each projects as project (project.id)}
+                        {#each projects as project (project.id)}
                         <li class="list__item">
                             <a href="{project.link}" class="list__cover">
                                 <img src="{project.image}" alt="{project.title}">
