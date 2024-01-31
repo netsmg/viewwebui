@@ -16,11 +16,11 @@
     <div class="col-12 col-md-12 col-lg-6">
       <div class="post post--big">
         <a href="{post.link}" class="post__img">
-          <img src="{post.image}" alt="">
+          <img src="{post.image}" alt="{post.title">
         </a>
 
         <div class="post__content">
-          <a href="{post.link}" class="post__category">Business</a>
+          <a href="{post.link}" class="post__category">{post.tag}</a>
           <h3 class="post__title"><a href="{post.link}">{post.title}</a></h3>
           <div class="post__meta">
             <span class="post__date">
