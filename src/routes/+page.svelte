@@ -1,4 +1,9 @@
 
+<script lang="ts">
+  import Products from "$lib/components/Products.svelte";
+  
+</script>
+
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -292,6 +297,8 @@
 	</section>
 	<!-- end home -->
 
+
+<Products />
 	<!-- section -->
 	<section class="section section--carousel">
 		<div class="container">
@@ -577,247 +584,7 @@
 	</section>
 	<!-- end section -->
 
-	<!-- section -->
-	<section class="section">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-lg-6 col-xl-4">
-					<div class="row">
-						<div class="col-12">
-							<!-- title -->
-							<div class="section__title-wrap">
-								<h2 class="section__title section__title--small">Pictures</h2>
-
-								<div class="section__nav-wrap">
-									<a href="#" class="section__view">View All</a>
-								</div>
-							</div>
-							<!-- end title -->
-
-							<!-- cards -->
-							<ul class="list list--mb">
-								<li class="list__item">
-									<a href="#" class="list__cover">
-										<img src="https://flixhub.volkovdesign.com/img/cards/7.jpg" alt="">
-									</a>
-
-									<div class="list__wrap">
-										<h3 class="list__title">
-											<a href="#">Business Card Presentation Mockup</a>
-										</h3>
-
-										<div class="list__price">
-											<span>$1.99</span><s>$4.99</s><b>60% OFF</b>
-										</div>
-
-										<button class="list__buy" type="button">
-											<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><line x1='256' y1='112' x2='256' y2='400' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='400' y1='256' x2='112' y2='256' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/></svg>
-										</button>
-									</div>
-								</li>
-								<li class="list__item">
-									<a href="#" class="list__cover">
-										<img src="https://flixhub.volkovdesign.com/img/cards/5.jpg" alt="">
-									</a>
-
-									<div class="list__wrap">
-										<h3 class="list__title">
-											<a href="#">Online Movies HTML Template</a>
-										</h3>
-
-										<div class="list__price">
-											<span>$4.99</span><s>$9.99</s><b>50% OFF</b>
-										</div>
-
-										<button class="list__buy" type="button">
-											<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><line x1='256' y1='112' x2='256' y2='400' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='400' y1='256' x2='112' y2='256' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/></svg>
-										</button>
-									</div>
-								</li>
-								<li class="list__item">
-									<a href="#" class="list__cover">
-										<img src="https://flixhub.volkovdesign.com/img/cards/3.jpg" alt="">
-									</a>
-
-									<div class="list__wrap">
-										<h3 class="list__title">
-											<a href="#">Coffee Paper Cup Mockup</a>
-										</h3>
-
-										<div class="list__price">
-											<span>$3.59</span><s>$5.99</s><b>40% OFF</b>
-										</div>
-
-										<button class="list__buy" type="button">
-											<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><line x1='256' y1='112' x2='256' y2='400' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='400' y1='256' x2='112' y2='256' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/></svg>
-										</button>
-									</div>
-								</li>
-							</ul>
-							<!-- end cards -->
-						</div>
-					</div>
-				</div>
-
-				<div class="col-12 col-lg-6 col-xl-4">
-					<div class="row">
-						<div class="col-12">
-							<!-- title -->
-							<div class="section__title-wrap">
-								<h2 class="section__title section__title--small">Mockups</h2>
-
-								<div class="section__nav-wrap">
-									<a href="#" class="section__view">View All</a>
-								</div>
-							</div>
-							<!-- end title -->
-
-							<!-- cards -->
-							<ul class="list list--mb">
-								<li class="list__item">
-									<a href="#" class="list__cover">
-										<img src="https://flixhub.volkovdesign.com/img/cards/1.jpg" alt="">
-									</a>
-
-									<div class="list__wrap">
-										<h3 class="list__title">
-											<a href="#">Magazine Showcase Mockup</a>
-										</h3>
-
-										<div class="list__price">
-											<span>$3.89</span><s>$5.99</s><b>35% OFF</b>
-										</div>
-
-										<button class="list__buy" type="button">
-											<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><line x1='256' y1='112' x2='256' y2='400' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='400' y1='256' x2='112' y2='256' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/></svg>
-										</button>
-									</div>
-								</li>
-								<li class="list__item">
-									<a href="#" class="list__cover">
-										<img src="https://flixhub.volkovdesign.com/img/cards/6.jpg" alt="">
-									</a>
-
-									<div class="list__wrap">
-										<h3 class="list__title">
-											<a href="#">Stationery with Shadows Mockup</a>
-										</h3>
-
-										<div class="list__price">
-											<span>$4.99</span><s>$9.99</s><b>50% OFF</b>
-										</div>
-
-										<button class="list__buy" type="button">
-											<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><line x1='256' y1='112' x2='256' y2='400' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='400' y1='256' x2='112' y2='256' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/></svg>
-										</button>
-									</div>
-								</li>
-								<li class="list__item">
-									<a href="#" class="list__cover">
-										<img src="https://flixhub.volkovdesign.com/img/cards/8.jpg" alt="">
-									</a>
-
-									<div class="list__wrap">
-										<h3 class="list__title">
-											<a href="#">Open Magazine with Shadows Mockup</a>
-										</h3>
-
-										<div class="list__price">
-											<span>$2.24</span><s>$24.99</s><b>91% OFF</b>
-										</div>
-
-										<button class="list__buy" type="button">
-											<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><line x1='256' y1='112' x2='256' y2='400' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='400' y1='256' x2='112' y2='256' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/></svg>
-										</button>
-									</div>
-								</li>
-							</ul>
-							<!-- end cards -->
-						</div>
-					</div>	
-				</div>
-
-				<div class="col-12 col-lg-6 col-xl-4">
-					<div class="row">
-						<div class="col-12">
-							<!-- title -->
-							<div class="section__title-wrap">
-								<h2 class="section__title section__title--small">Graphics</h2>
-
-								<div class="section__nav-wrap">
-									<a href="#" class="section__view">View All</a>
-								</div>
-							</div>
-							<!-- end title -->
-
-							<!-- cards -->
-							<ul class="list">
-								<li class="list__item">
-									<a href="#" class="list__cover">
-										<img src="https://flixhub.volkovdesign.com/img/cards/9.jpg" alt="">
-									</a>
-
-									<div class="list__wrap">
-										<h3 class="list__title">
-											<a href="#">Beer Bottle with Labels Mockup</a>
-										</h3>
-
-										<div class="list__price">
-											<span>$3.89</span><s>$5.99</s><b>35% OFF</b>
-										</div>
-
-										<button class="list__buy" type="button">
-											<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><line x1='256' y1='112' x2='256' y2='400' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='400' y1='256' x2='112' y2='256' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/></svg>
-										</button>
-									</div>
-								</li>
-								<li class="list__item">
-									<a href="#" class="list__cover">
-										<img src="https://flixhub.volkovdesign.com/img/cards/2.jpg" alt="">
-									</a>
-
-									<div class="list__wrap">
-										<h3 class="list__title">
-											<a href="#">Digital marketplace HTML Template</a>
-										</h3>
-
-										<div class="list__price">
-											<span>$7.49</span><s>$24.99</s><b>70% OFF</b>
-										</div>
-
-										<button class="list__buy" type="button">
-											<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><line x1='256' y1='112' x2='256' y2='400' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='400' y1='256' x2='112' y2='256' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/></svg>
-										</button>
-									</div>
-								</li>
-								<li class="list__item">
-									<a href="#" class="list__cover">
-										<img src="https://flixhub.volkovdesign.com/img/cards/4.jpg" alt="">
-									</a>
-
-									<div class="list__wrap">
-										<h3 class="list__title">
-											<a href="#">Coffee Paper Cups Mockup</a>
-										</h3>
-
-										<div class="list__price">
-											<span>$3.89</span><s>$5.99</s><b>35% OFF</b>
-										</div>
-
-										<button class="list__buy" type="button">
-											<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><line x1='256' y1='112' x2='256' y2='400' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='400' y1='256' x2='112' y2='256' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/></svg>
-										</button>
-									</div>
-								</li>
-							</ul>
-							<!-- end cards -->
-						</div>
-					</div>	
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- end section -->
+	</>
 
 	<!-- section -->
 	<section class="section">
