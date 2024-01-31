@@ -1,42 +1,55 @@
-<script>
-  import { collection, onSnapshot } from 'firebase/firestore';
-  import { getFirestore } from 'firebase/firestore';
+import { collection, onSnapshot } from 'firebase/firestore';
+import { getFirestore } from 'firebase/firestore';
 
-  let projects = [];
-  const db = getFirestore();
-  const query = collection(db, 'projects');
+let projects = [];
+const db = getFirestore();
+const query = collection(db, 'projects');
 
-  onSnapshot(query, (snapshot) => {
-    projects = snapshot.docs.map(doc => doc.data());
-  });
-</script>
+onSnapshot(query, (snapshot) => {
+    projects = snapshot.docs.map((doc) => doc.data());
+});
 
-<div>
-  {#each projects as project (project.id)}
-    <div class="card">
-      <a href="{project.link}" class="card__cover">
-        <img src="{project.image}" alt="">
-        <span class="card__rate">
-          <svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'>
-            <path d='M394,480a16,16,0,0,1-9.39-3L256,383.76,127.39,477a16,16,0,0,1-24.55-18.08L153,310.35,23,221.2A16,16,0,0,1,32,192H192.38l48.4-148.95a16,16,0,0,1,30.44,0l48.4,149H480a16,16,0,0,1,9.05,29.2L359,310.35l50.13,148.53A16,16,0,0,1,394,480Z'/>
-          </svg>
-          {project.star}
-        </span>
-      </a>
+<section class="section">
+    <div class="row">
+        <div class="col-12 col-lg-6 col-xl-4">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Cards -->
+                    <div class="section__title-wrap">
+                        <h2 class="section__title section__title--small">Pictures</h2>
+                        <div class="section__nav-wrap">
+                            <a href="/" class="section__view">View All</a>
+                        </div>
+                    </div>
 
-      <div class="card__title">
-        <h3><a href="{project.link}">{project.title}</a></h3>
-        <span>$ {project.taka} <s>$ {project.rtaka}</s></span>
-      </div>
+                    <ul class="list list--mb">
+                        {#each projects as project (project.id)}
+                        <li class="list__item">
+                            <a href="{project.link}" class="list__cover">
+                                <img src="{project.image}" alt="{project.title}">
+                            </a>
 
-      <div class="card__actions">
-        <button class="card__buy" type="button">Buy</button>
-        <button class="card__favorite" type="button">
-          <svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'>
-            <path d='M352.92,80C288,80,256,144,256,144s-32-64-96.92-64C106.32,80,64.54,124.14,64,176.81c-1.1,109.33,86.73,187.08,183,252.42a16,16,0,0,0,18,0c96.26-65.34,184.09-143.09,183-252.42C447.46,124.14,405.68,80,352.92,80Z' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/>
-          </svg>
-        </button>
-      </div>
+                            <div class="list__wrap">
+                                <h3 class="list__title">
+                                    <a href="{project.link}">{project.title}</a>
+                                </h3>
+
+                                <div class="list__price">
+                                    <span>{project.taka}</span>
+                                    <s>{project.rtaka}</s>
+                                    <b>{project.off}% OFF</b>
+                                </div>
+
+                                <button class="list__buy" type="button">
+                                    <svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><line x1='256' y1='112' x2='256' y2='400' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='400' y1='256' x2='112' y2='256' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/></svg>
+                                </button>
+                            </div>
+                        </li>
+                        {/each}
+                    </ul>
+                    <!-- End Cards -->
+                </div>
+            </div>
+        </div>
     </div>
-  {/each}
-</div>
+</section>
