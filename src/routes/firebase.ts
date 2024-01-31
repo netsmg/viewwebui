@@ -22,14 +22,14 @@ import {
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAMHfJp1ec85QBo-mnke89qtiYGen9zTSE",
-  authDomain: "sveltefire-testing.firebaseapp.com",
-  databaseURL: "https://sveltefire-testing.firebaseio.com",
-  projectId: "sveltefire-testing",
-  storageBucket: "sveltefire-testing.appspot.com",
-  messagingSenderId: "1030648105982",
-  appId: "1:1030648105982:web:2afebc34841fa242ed4eaf",
-  measurementId: "G-RT6GM89V6K"
+  apiKey: "AIzaSyBzzaSTr42firr3fx5YcdXhDzB4iBLVBOM",
+  authDomain: "contact-database-9c47b.firebaseapp.com",
+  databaseURL: "https://contact-database-9c47b-default-rtdb.firebaseio.com",
+  projectId: "contact-database-9c47b",
+  storageBucket: "contact-database-9c47b.appspot.com",
+  messagingSenderId: "118822537955",
+  appId: "1:118822537955:web:3ef795baeadbe37b7293d6",
+  measurementId: "G-0WY0798WFC"
 };
 
 // Initialize Firebase
