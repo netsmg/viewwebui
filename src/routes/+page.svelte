@@ -584,7 +584,7 @@
 	</section>
 	<!-- end section -->
 
-	<Products />
+	
 
 	<!-- section -->
 	<section class="section">
