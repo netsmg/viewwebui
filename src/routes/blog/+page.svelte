@@ -16,7 +16,7 @@
     <div class="col-12 col-md-12 col-lg-6">
       <div class="post post--big">
         <a href="{post.link}" class="post__img">
-          <img src="{post.image}" alt="{post.title">
+          <img src="{post.image}" alt="{post.title}">
         </a>
 
         <div class="post__content">
