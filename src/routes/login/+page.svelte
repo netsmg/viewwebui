@@ -1,36 +1,6 @@
 <script>
-  import { initializeApp } from 'firebase/app';
-
-  import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
-  
-
-  let username = '';
-  let password = '';
-
-  const auth = getAuth(firebaseApp);
-
-  const login = async () => {
-    try {
-      const userCredential = await signInWithEmailAndPassword(auth, username, password);
-      const user = userCredential.user;
-      // Redirect to the dashboard upon successful login
-      window.location('/dashboard');
-    } catch (error) {
-      console.error('Authentication failed', error.message);
-    }
-  };
-
-  // You might want to check if the user is already authenticated and redirect them
-  onMount(() => {
-    const user = auth.currentUser;
-    if (user) {
-      // User is already authenticated, redirect to the dashboard
-      window.location('/dashboard');
-    }
-  });
   export let year = new Date().getFullYear();
 </script>
-
 
 
 <html lang="en">
@@ -67,7 +37,7 @@
             <div class="card">
               <div class="card-body p-4">
                 <div class="p-3">
-                  <form on:submit|preventDefault={login}>
+                  <form action="./">
                     <div class="mb-3">
                       <label class="form-label">Username</label>
                       <div class="input-group mb-3 bg-light-subtle rounded-3">
