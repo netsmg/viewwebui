@@ -1,13 +1,15 @@
-import { collection, onSnapshot } from 'firebase/firestore';
-import { getFirestore } from 'firebase/firestore';
+<script>
+  import { collection, onSnapshot } from 'firebase/firestore';
+  import { getFirestore } from 'firebase/firestore';
 
-let projects = [];
-const db = getFirestore();
-const query = collection(db, 'projects');
+  let projects = [];
+  const db = getFirestore();
+  const query = collection(db, 'projects');
 
-onSnapshot(query, (snapshot) => {
+  onSnapshot(query, (snapshot) => {
     projects = snapshot.docs.map((doc) => doc.data());
-});
+  });
+</script>
 
 <section class="section">
     <div class="row">
@@ -23,7 +25,7 @@ onSnapshot(query, (snapshot) => {
                     </div>
 
                     <ul class="list list--mb">
-                        {#each projects as project (project.id)}
+                        {@each projects as project (project.id)}
                         <li class="list__item">
                             <a href="{project.link}" class="list__cover">
                                 <img src="{project.image}" alt="{project.title}">
