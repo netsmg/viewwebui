@@ -298,7 +298,7 @@
 	<!-- end home -->
 
 
-<Products />
+
 	<!-- section -->
 	<section class="section section--carousel">
 		<div class="container">
@@ -584,7 +584,7 @@
 	</section>
 	<!-- end section -->
 
-	
+	<Products />
 
 	<!-- section -->
 	<section class="section">
